@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portafolio</title>
+    <link rel="stylesheet" href="style20241112.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+</head>
+<body id="body">
+    <div class="wrapper" id="home">
+        <header>
+            <img src="images/menu-regular-24 (2).png" alt="" id="abrir" class="abrir-menu">
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>A<span>R</span></h2>
+                </div>
+                <ul id="menu" class="menu">
+                    <button id="cerrar" class="cerrar-menu"><b>X</b></button>
+                    <li><a href="#home" class="menu-inicio">Inicio</a></li>
+                    <li><a href="#aboutme">Sobre mi</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="info-content">
+                <h1>Soy <br><span>Alexis </span>Rodriguez</h1>
+                <p>Programador y diseñador web autodidacta,<br>
+                actualmente estoy trabajando de freelance orientado a front-end</p>
+                <a href="https://github.com/alexisrr11"><i class='bx bxl-github'></i></a>
+                <a href="mailto:alexis.r4995@gmail.com"><i class='bx bxl-gmail'></i></a>
+            </div>
+            <img src="images/alexisfoto.png" alt="">
+        </main>
+    </div>
+
+    <div class="about" id="aboutme">
+        <div class="about-info">
+            <h2>Sobre mi</h2>
+            <div class="divider"></div>
+            <p>Estudiante en desarrollo, 6 meses de experiencia creando proyectos personales 
+            alcanzando el aprendisaje de lenguajes y técnicas de programación, responsable y comprometido
+            con mi trabajo. Estoy constantemente aprendiendo nuevos conocimientos y 
+            experiencias que me ayuden a crecer en esta profesion</p>
+        </div>
+        <div class="about-info">
+            <h2>Skills</h2>
+            <div class="divider"></div>
+            <div class="info1">
+            <div class="skills">
+            <i id="h" class='bx bxl-html5'></i>
+            <h4>Habilidad: Intermedia</h4>
+            </div>
+            <div class="skills">
+            <i id="c" class='bx bxl-css3'></i>
+            <h4>Habilidad: Intermedia</h4>
+            </div>
+            <div class="skills">
+            <i id="js" class='bx bxl-javascript'></i>
+            <h4> Habilidad: Basica</h4>
+            </div>
+            <div class="skills">
+            <i id="p" class='bx bxl-php'></i>
+            <h4>Habilidad: Básica</h4>
+            </div>
+            <div class="skills">
+            <i class='bx bxl-wordpress'></i>
+            <h4>Habilidad: Intermedia</h4>
+            </div>
+            
+            <div class="skills">
+                <img src="images/mysql-logo-removebg-preview.png" alt="">
+                <h4>Habilidad: Basica</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="servicios" id="servicios">
+        <div class="servicios-headings">
+            <h2>Servicios</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            <div class="service">
+                <div class="service_title">
+                    <h2>Programación web</h2>
+                    <div class="service-icons">
+                    <i id="h" class='bx bxl-html5'></i>
+                    <i id="c" class='bx bxl-css3'></i>
+                    <i id="js" class='bx bxl-javascript'></i>
+                    <i id="p" class='bx bxl-php'></i>
+                    </div>
+                    <p>Elavoración desde cero de paginas webs estaticas y dinamicas
+                    ofrezco un servicio de bajo costo y de exelente funcionamenito
+                    </p>
+                    <ul>
+                        <li>Certificado SSL</li>
+                        <li>SEO y posicionamiento en google</li>
+                        <li>Deploy netlify</li>
+                        <li>Mantenimiento web</li>
+                    </ul>
+                    <h3>Mayor flexibilidad en diseños</h3>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service_title">
+                    <h2>Diseño web con Wordpress</h2>
+                    <div class="service-icons">
+                    <i class='bx bxl-wordpress'></i>
+                    </div>
+                    <p>Elavoración de paginas webs personalisadas desde cero o
+                    creadas con pluguings, temas e IA. Reralizadas con mayor 
+                    rapidez y variedad de opciones </p>
+                    <ul>
+                        <li>Certificado SSL</li>
+                        <li>SEO y posicionamiento en google</li>
+                        <li>Deploy netlify</li>
+                        <li>Auto-Gestionables</li>
+                    </ul>
+                    <h3>Menor costo y tiempo de elavoración</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio-headings">
+            <h2>My portfolio</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card_img">
+                </div>
+                <div class="card_title">
+                    <h2>Proyecto web:<br>estrellastudio</h2>
+                </div>
+                <div class="card_proyects-links">
+                    <a href="https://github.com/alexisrr11/EstrellaStudio11.github.io/blob/main/index.html">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://alexisrr11.github.io/EstrellaStudio11.github.io/">
+                        <i class='bx bx-world'></i>
+                    </a>
+                </div>
+                <div class="proyects-details-content">
+                    <button class="proyects-details" id="hideText_btn">
+                    Más detalles
+                    </button>
+                </div>
+            </div>
+
+            <div class="ventana" id="hideText">
+                <h3>Detalles del proyecto</h3>
+                <br>
+                <p>Pagína web informativa sobre servicios, con menu interactivo 
+                sobre una misma pagina y con un portafolio de imagenes para 
+                facilitar su visualizacion</p>
+                <br>
+                <li class='bx bxl-html5'>HTML</li>
+                <br>
+                <li class='bx bxl-css3'>CSS</li>
+                <br>
+                <li class='bx bxl-javascript'>JAVASCRIPT</li>
+            </div>
+
+            <div class="card">
+                <div class="card_img1">
+                </div>
+                <div class="card_title">
+                    <h2>Proyecto web:<br>mafe</h2>
+                </div>
+                <div class="card_proyects-links">
+                    <a href="https://github.com/alexisrr11/MAFE">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://alexisrr11.github.io/MAFE/">
+                        <i class='bx bx-world'></i>
+                    </a>
+                </div>
+                <div class="proyects-details-content">
+                    <button class="proyects-details" id="hideText_btn1">
+                    Más detalles
+                    </button>
+                </div>
+            </div>
+
+            <div class="ventana1" id="hideText1">
+                <h3>Detalles del proyecto</h3>
+                <br>
+                <p>Página web E-commerce, con carrito para alojamiento
+                de productos y envio predetermino hacia whatsapp, con menu interactivo 
+                sobre una misma pagina</p>
+                <br>
+                    <li class='bx bxl-html5'>HTML</li>
+                    <br>
+                    <li class='bx bxl-css3'>CSS</li>
+                    <br>
+                    <li class='bx bxl-javascript'>JAVASCRIPT</li>
+            </div>
+            
+        </div>
+    </div>
+        
+        <div id="contact" class="contact-section">
+            <div class="contact-headings">
+                <h2>Contactame</h2>
+                <div class="divider"></div>
+            </div>
+           
+            <div class="container-contact">
+                <div class="contact-email">
+                    <h3>Trabajemos juntos</h3>
+                    <p>Comuniquese ante cualquier duda<br>
+                    Horarios disponibles: Full time</p>
+                    <h5><span><b>> </b></span>alexis.r4995@gmail.com</h5>
+                </div>
+                <div class="contact-form">
+                    <h4>Espero su mensaje...</h4>
+                    <form class="form" method="post">
+                        <input type="text" name="name" placeholder="Nombre Completo">
+                        <input type="email" name="email" placeholder="Email">
+                        <textarea type="mensaje" name="mensaje" placeholder="Por favor deje su mensaje aquí..."></textarea>
+                        <button href="#alert" type="sumit" name="register" class="btn-sumit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Alexis Rodriguez</h2>
+            <h5>Frontend developer</h5>
+        </div>
+        
+    </footer>
+
+<?php
+    include("registrar.php");
+?>
+
+<script src="javascript.js"></script>
+
+<script src="descProyecto.js"></script>
+
+</body>
+</html>
