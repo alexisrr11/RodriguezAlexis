@@ -541,7 +541,7 @@ span {
 
     .card {
         height: auto;
-        width: 50%;
+        width: 60%;
         margin-bottom: 10%;
     }
 }
@@ -586,8 +586,11 @@ span {
     .form {
         width: 50vw;
     }
-    .contact-section {
-        height: 120vh;
+    .wrapper,
+    .contact-section,
+    .servicios,
+    .portfolio {
+        height: 100vh;
     }
     .main img {
         width: 55vw;
