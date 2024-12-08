@@ -588,4 +588,10 @@ span {
     .portfolio {
         height: 160vh;
     }
+    .contact-section {
+        height: 120vh;
+    }
+    .main img {
+        width: 55vw;
+    }
 }
