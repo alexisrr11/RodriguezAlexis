@@ -514,7 +514,7 @@ span {
     .contact-section,
     .servicios,
     .portfolio {
-        height: 130vh;
+        height: 125vh;
     }
 
     .service {
@@ -586,11 +586,8 @@ span {
     .form {
         width: 50vw;
     }
-    .wrapper,
-    .contact-section,
-    .servicios,
     .portfolio {
-        height: 120vh;
+        height: 140vh;
     }
     .main img {
         width: 55vw;
