@@ -522,7 +522,7 @@ span {
         height: 200vh;
         
     }
-
+    
     .servicios .container {
         flex-direction: column;
         align-items: center;
@@ -537,6 +537,12 @@ span {
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+
+    .card {
+        height: auto;
+        width: 60%;
+        margin-bottom: 10%;
     }
 }
 @media screen and (max-width:500px) {
@@ -573,11 +579,6 @@ span {
     .service_title {
         margin: 0;
         padding: 0;
-    }
-    .card {
-        height: 60%;
-        width: 60%;
-        margin-bottom: 30%;
     }
     .card_title {
         font-size: 0.8em;
