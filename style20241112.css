@@ -514,7 +514,7 @@ span {
     .contact-section,
     .servicios,
     .portfolio {
-        height: 140vh;
+        height: 130vh;
     }
 
     .service {
@@ -575,7 +575,7 @@ span {
         padding: 0;
     }
     .card {
-        height: 70%;
+        height: 60%;
         width: 60%;
         margin-bottom: 30%;
     }
