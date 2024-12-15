@@ -41,7 +41,7 @@ body {
     display: flex;
     position: fixed;
     right: 0;
-    width: 80%;
+    width: 75%;
     justify-content: space-around;
     gap: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.808);
