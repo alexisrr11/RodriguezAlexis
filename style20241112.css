@@ -82,9 +82,9 @@ body {
     width: 80vw;
     height: 80vh;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Ajuste el espacio entre los elementos */
+    gap: 20px;
 }
 
 h1 {
@@ -105,16 +105,16 @@ span {
 }
 
 .main img {
-    max-width: 45vw; /* Ajuste flexible */
-    width: 100%; /* Se adapta a pantallas pequeñas */
+    max-width: 45vw; 
+    width: 100%; 
     border: 7px solid aqua;
     border-radius: 10px;
 }
 
 .about {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
-    gap: 20px; /* Espacio entre los elementos */
+    flex-wrap: wrap; 
+    gap: 20px; 
     width: 100vw;
     align-items: center;
 }
@@ -136,7 +136,7 @@ span {
 
 .info1 {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -477,7 +477,7 @@ span {
     .main {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px; /* Añadir espacio entre los elementos */
+        gap: 20px; 
     }
     
     .about {
