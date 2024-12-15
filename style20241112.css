@@ -81,9 +81,10 @@ body {
     margin: 0 auto;
     width: 80vw;
     height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center;
+    gap: 20px; /* Ajuste el espacio entre los elementos */
 }
 
 h1 {
@@ -103,16 +104,17 @@ span {
     cursor: pointer;
 }
 
-
 .main img {
-    width: 25vw;
+    max-width: 45vw; /* Ajuste flexible */
+    width: 100%; /* Se adapta a pantallas pequeñas */
     border: 7px solid aqua;
     border-radius: 10px;
 }
 
 .about {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    gap: 20px; /* Espacio entre los elementos */
     width: 100vw;
     align-items: center;
 }
@@ -133,8 +135,9 @@ span {
 }
 
 .info1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    gap: 20px;
 }
 
 .skills {
@@ -209,8 +212,8 @@ span {
 }
 
 .service {
-    width: 40%;
-    height: 85%;
+    width: 100%;
+    height: auto;
     color: #fff;
     background-color: #101e4b;
     margin: 1em;
@@ -245,8 +248,8 @@ span {
 }
 
 .card {
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     color: #fff;
     background-color: #101e4b;
     margin: 1em;
@@ -322,8 +325,10 @@ span {
 }
 
 .container-contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .container-contact img {
@@ -340,7 +345,7 @@ span {
 .form {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 50vw;
     margin-top: 2em;
 }
 
@@ -397,9 +402,11 @@ span {
     height: 70px;
     cursor: pointer;
 }
+
 .cerrar-menu {
     display: none;
 }
+
 .ok {
     text-align: center;
     width: 100%;
@@ -409,6 +416,7 @@ span {
     position: fixed;
     bottom: 0;
 }
+
 .bad {
     text-align: center;
     width: 100%;
@@ -418,6 +426,7 @@ span {
     position: fixed;
     bottom: 0;
 }
+
 .ventana {
     background-color: #101e4b;
     width: 70%;
@@ -456,140 +465,59 @@ span {
     display: block;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     .menu {
-        opacity: 0;
-        visibility: hidden;
-
         flex-direction: column;
-        text-align: center;
-        background-color: #101e4b;
-        height: 100vh;
-        top: 0;
+        justify-content: center;
+        gap: 10px;
+        padding: 2rem;
+        width: 100%;
     }
-    .menu li .menu-inicio{
-        color: #dedede;
-    }
-    .menu.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    .abrir-menu {
-        display: block;
-    }
-    .cerrar-menu {
-        display: block;
-        color: #fff;
-        background-color: #101e4b;
-        border-radius: 50%;
-        border: 2px solid #101e4b;
-        cursor: pointer;
-        height: 5%;
-        width: 10%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: 10px;
-        font-size: 18px;
-    }
-    .cerrar-menu:hover {
-        color: aqua;
-    }
-    .abrir-menu:active {
-        transform: scale(1.1);
-    }
+    
     .main {
-        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Añadir espacio entre los elementos */
     }
-    .main img {
-        width: 45vw;
-    }
+    
     .about {
-        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
     
-    .wrapper,
-    .contact-section,
-    .servicios,
-    .portfolio {
-        height: 125vh;
-    }
-
     .service {
-        width: 75%;
-        height: 200vh;
-        
+        width: 100%;
+        margin: 1em;
+        height: auto;
     }
     
-    .servicios .container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    .portfolio .container {
-        display: flex;
-        flex-wrap: wrap;
-    } 
-    .contact-section .container-contact {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
     .card {
-        height: auto;
-        width: 60%;
-        margin-bottom: 10%;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
-@media screen and (max-width:500px) {
-    .wrapper {
-        height: 120vh;
-    }
+
+@media screen and (max-width: 500px) {
     h1 {
         font-size: 1.5em;
     }
-    .portfolio-headings h2,
-    .contact-headings h2,
-    .servicios-headings h2 {
-        font-size: 1.5em;
-    }
-    .about-info h2 {
-        font-size: 1.5em;
-    }
-    .brand {
-        position: relative;
-    }
-    .divider {
-        width: 40px;
-    }
-    .info1 {
-        display: block;
-    }
-    .skills i {
-        font-size: 3.5em;
-    }
-    .skills h4 {
-        color: #191c32;
-        font-size: 0.9em;
-    }
-    .service_title {
-        margin: 0;
-        padding: 0;
-    }
-    .card_title {
-        font-size: 0.8em;
-    }
-    .form {
-        width: 50vw;
-    }
-    .portfolio {
-        height: 140vh;
-    }
+    
     .main img {
-        width: 55vw;
+        width: 80%;
+        max-width: 100%;
+    }
+    
+    .service {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .form {
+        width: 80%;
     }
 }
