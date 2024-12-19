@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>portafolio</title>
     <link rel="stylesheet" href="style20241112.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
 </head>
@@ -28,7 +28,7 @@
         <main class="main">
             <div class="info-content">
                 <h1>Soy <br><span>Alexis </span>Rodriguez</h1>
-                <p>Programador web autodidacta,<br>
+                <p>Programador y diseñador web autodidacta,<br>
                 actualmente estoy trabajando de freelance orientado a front-end</p>
                 <a href="https://github.com/alexisrr11"><i class='bx bxl-github'></i></a>
                 <a href="mailto:alexis.r4995@gmail.com"><i class='bx bxl-gmail'></i></a>
@@ -49,33 +49,32 @@
         <div class="about-info">
             <h2>Skills</h2>
             <div class="divider"></div>
-            <div class="info1">
-            <div class="skills">
-            <i id="h" class='bx bxl-html5'></i>
-            <h4>Habilidad: Intermedia</h4>
-            </div>
-            <div class="skills">
-            <i id="c" class='bx bxl-css3'></i>
-            <h4>Habilidad: Intermedia</h4>
-            </div>
-            <div class="skills">
-            <i id="js" class='bx bxl-javascript'></i>
-            <h4> Habilidad: Basica</h4>
-            </div>
-            <div class="skills">
-            <i id="p" class='bx bxl-php'></i>
-            <h4>Habilidad: Básica</h4>
-            </div>
-            <div class="skills">
-            <i class='bx bxl-wordpress'></i>
-            <h4>Habilidad: Intermedia</h4>
-            </div>
-            
-            <div class="skills">
-                <img src="images/mysql-logo-removebg-preview.png" alt="">
-                <h4>Habilidad: Basica</h4>
+                <div class="info1">
+                    <div class="skills">
+                        <i id="h" class='bx bxl-html5'></i>
+                        <h4>Habilidad: Intermedia</h4>
+                    </div>
+                    <div class="skills">
+                        <i id="c" class='bx bxl-css3'></i>
+                        <h4>Habilidad: Intermedia</h4>
+                    </div>
+                    <div class="skills">
+                        <i id="js" class='bx bxl-javascript'></i>
+                        <h4> Habilidad: Basica</h4>
+                    </div>
+                    <div class="skills">
+                        <i id="p" class='bx bxl-php'></i>
+                        <h4>Habilidad: Básica</h4>
+                    </div>
+                    <div class="skills">
+                        <i class='bx bxl-wordpress'></i>
+                        <h4>Habilidad: Intermedia</h4>
+                    </div>
+                    <div class="skills">
+                        <img src="images/mysql-logo-removebg-preview.png" alt="">
+                        <h4>Habilidad: Basica</h4>
+                    </div>
                 </div>
-            </div>
         </div>
     </div>
 
@@ -100,6 +99,7 @@
                     <ul>
                         <li>Certificado SSL</li>
                         <li>SEO y posicionamiento en google</li>
+                        <li>Deploy netlify</li>
                         <li>Mantenimiento web</li>
                     </ul>
                     <h3>Mayor flexibilidad en diseños</h3>
@@ -117,9 +117,10 @@
                     <ul>
                         <li>Certificado SSL</li>
                         <li>SEO y posicionamiento en google</li>
+                        <li>Deploy netlify</li>
                         <li>Auto-Gestionables</li>
                     </ul>
-                    <h3>Menor tiempo de elavoración</h3>
+                    <h3>Menor costo y tiempo de elavoración</h3>
                 </div>
             </div>
         </div>
@@ -219,12 +220,13 @@
                 </div>
                 <div class="contact-form">
                     <h4>Espero su mensaje...</h4>
-                    <form class="form" method="post">
+                    <form class="form" action="" id="form">
                         <input type="text" name="name" placeholder="Nombre Completo">
                         <input type="email" name="email" placeholder="Email">
                         <textarea type="mensaje" name="mensaje" placeholder="Por favor deje su mensaje aquí..."></textarea>
-                        <button href="#alert" type="sumit" name="register" class="btn-sumit">Enviar</button>
+                        <button href="#alert" type="submit" name="register" class="btn-sumit">Enviar</button>
                     </form>
+                    <a href="mailto:alexis.r4995@gmail.com" id="mailto">mail</a>
                 </div>
             </div>
         </div>
@@ -235,10 +237,6 @@
         </div>
         
     </footer>
-
-<?php
-    include("registrar.php");
-?>
 
 <script src="javascript.js"></script>
 
