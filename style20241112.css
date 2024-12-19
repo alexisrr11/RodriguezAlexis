@@ -21,12 +21,18 @@ body {
     color: aqua;
 }
 
-.wrapper, 
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #191c32;
+    color: #fff;
+}
 .portfolio,
 .servicios,
 .contact-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     width: 100vw;
-    height: 100vh;
     background-color: #191c32;
     color: #fff;
 }
@@ -41,7 +47,7 @@ body {
     display: flex;
     position: fixed;
     right: 0;
-    width: 75%;
+    width: 50%;
     justify-content: space-around;
     gap: 20px;
 }
@@ -78,12 +84,13 @@ body {
 }
 
 .main {
-    margin: 0 auto;
     width: 80vw;
     height: 80vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-self: center;
+    gap: 10px;
 }
 
 h1 {
@@ -198,24 +205,23 @@ span {
 .portfolio .container,
 .servicios .container {
     width: 100vw;
-    height: 80vh;
     margin: 0 auto;
-    display: flex;   
     justify-content: center;
 }
 
 .container {
     background: #191c32;
+    display: flex;
 }
 
 .service {
     width: 40%;
-    height: 85%;
     color: #fff;
     background-color: #101e4b;
     margin: 1em;
     border: 2px solid aqua;
     border-radius: 20px;
+    justify-self: center;
 }
 
 .service_title {
@@ -251,6 +257,7 @@ span {
     background-color: #101e4b;
     margin: 1em;
     box-shadow: 0 1px 10px rgba(24, 24, 209, 0.808);
+    justify-self: center;
 }
 
 .card_img {
@@ -301,6 +308,7 @@ span {
     cursor: pointer;
 }
 
+
 .proyects-details-content {
     display: flex;
     width: 100%;
@@ -320,6 +328,7 @@ span {
     font-size: 20px;
     padding-top: 50px;
 }
+
 
 .container-contact {
     display: grid;
@@ -358,6 +367,11 @@ span {
     color: #fff;
     padding: 1.5em;
     border-bottom: 1px solid #fff;
+}
+
+#mailto {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .btn-sumit {
@@ -400,24 +414,6 @@ span {
 .cerrar-menu {
     display: none;
 }
-.ok {
-    text-align: center;
-    width: 100%;
-    padding: 12px;
-    background-color: #4e8;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-}
-.bad {
-    text-align: center;
-    width: 100%;
-    padding: 12px;
-    background-color: #a22;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-}
 .ventana {
     background-color: #101e4b;
     width: 70%;
@@ -428,30 +424,28 @@ span {
     padding: 20px;
     position: fixed;
     top: 20%;
+    left: 15%;
     box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.89);
     display: none;
     z-index: 1;
 }
-
 .show {
     display: block;
 }
-
 .ventana1 {
     background-color: #101e4b;
     width: 70%;
     height: 70%;
     border-radius: 20px;
     text-align: center;
-    align-items: center;
     padding: 20px;
     position: fixed;
     top: 20%;
-    box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.89);
+    left: 15%;
+    box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.88);
     display: none;
     z-index: 1;
 }
-
 .show1 {
     display: block;
 }
@@ -498,6 +492,9 @@ span {
     .abrir-menu:active {
         transform: scale(1.1);
     }
+    .container {
+        display: block;
+    }
     .main {
         display: flex;
         flex-wrap: wrap;
@@ -509,28 +506,23 @@ span {
         display: flex;
         flex-wrap: wrap;
     }
-
-    .wrapper,
-    .contact-section,
-    .servicios,
-    .portfolio {
-        height: 125vh;
+    .servicios {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
-
     .service {
         width: 75%;
-        height: 200vh;
-
+        
     }
-
     .servicios .container {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
     }
-    .portfolio .container {
+    .portfolio {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     } 
     .contact-section .container-contact {
         display: flex;
@@ -538,27 +530,22 @@ span {
         text-align: center;
         align-items: center;
     }
-
-    .card {
-        height: auto;
-        width: 60%;
-        margin-bottom: 10%;
-    }
 }
+
 @media screen and (max-width:500px) {
-    .wrapper {
-        height: 120vh;
-    }
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
-    .portfolio-headings h2,
+    .portfolio-headings h2, 
     .contact-headings h2,
     .servicios-headings h2 {
         font-size: 1.5em;
     }
     .about-info h2 {
         font-size: 1.5em;
+    }
+    .wrapper{
+        height: 120vh;
     }
     .brand {
         position: relative;
@@ -567,10 +554,11 @@ span {
         width: 40px;
     }
     .info1 {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .skills i {
-        font-size: 3.5em;
+        font-size: 3.8em;
     }
     .skills h4 {
         color: #191c32;
@@ -580,16 +568,11 @@ span {
         margin: 0;
         padding: 0;
     }
+    .card {
+        height: 70%;
+        margin-bottom: 30px;
+    }
     .card_title {
         font-size: 0.8em;
     }
-    .form {
-        width: 50vw;
-    }
-    .portfolio {
-        height: 140vh;
-    }
-    .main img {
-        width: 55vw;
-    }
-}
+} 
