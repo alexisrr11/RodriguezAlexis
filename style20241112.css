@@ -562,7 +562,8 @@ span {
         font-size: 0.9em;
     }
     .main img {
-        width: 50vw;
+        width: 55vw;
+        height: 70%;
     }
     .service_title {
         margin: 0;
