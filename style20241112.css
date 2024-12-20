@@ -561,6 +561,10 @@ span {
         color: #191c32;
         font-size: 0.9em;
     }
+    .main img {
+        width: 60vw;
+        height: 90%;
+    }
     .service_title {
         margin: 0;
         padding: 0;
