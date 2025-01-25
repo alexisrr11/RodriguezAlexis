@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
+    font-size: 15px;
 }
 
 .brand {
@@ -94,7 +95,7 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 span {
@@ -113,8 +114,8 @@ span {
 
 .main img {
     width: 25vw;
-    border: 7px solid aqua;
-    border-radius: 10px;
+    border: 5px solid aqua;
+    border-radius: 20px;
 }
 
 .about {
@@ -132,10 +133,11 @@ span {
 .about-info {
     grid-template-columns: repeat(2, 1fr);
     padding: 3em;
+    align-self: flex-start;
 }
 
 .about-info h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     color: #191c32;
 }
 
@@ -199,7 +201,7 @@ span {
 .contact-headings h2,
 .servicios-headings h2 {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.1em;
 }
 
 .portfolio .container,
@@ -212,7 +214,9 @@ span {
 .container {
     background: #191c32;
     display: flex;
+    gap: 30px;
 }
+
 
 .service {
     width: 40%;
@@ -266,12 +270,70 @@ span {
     background-image: url(./images/estrellastudio11.jpeg);
     background-size: cover;
 }
-
 .card_img1 {
     width: 100%;
     height: 150px;
     background-image: url(./images/Imagen\ de\ WhatsApp\ mafe.jpg);
     background-size: cover;
+}
+.card_img2 {
+    width: 100%;
+    height: 150px;
+    background-image: url(./images/Imagen\ de\ WhatsApp\ 2025-01-23\ a\ las\ 11.14.29_dc7accc2.jpg);
+    background-size: cover;
+}
+
+.ventana {
+    background-color: #101e4b;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.89);
+    display: none;
+    z-index: 1;
+}
+.show {
+    display: block;
+}
+.ventana1 {
+    background-color: #101e4b;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.88);
+    display: none;
+    z-index: 1;
+}
+.show1 {
+    display: block;
+}
+.ventana2 {
+    background-color: #101e4b;
+    width: 70%;
+    height: 70%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.88);
+    display: none;
+    z-index: 1;
+}
+.show2 {
+    display: block;
 }
 
 .card_title, 
@@ -333,6 +395,7 @@ span {
 .container-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
 }
 
 .container-contact img {
@@ -414,41 +477,6 @@ span {
 .cerrar-menu {
     display: none;
 }
-.ventana {
-    background-color: #101e4b;
-    width: 70%;
-    height: 70%;
-    border-radius: 20px;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    top: 20%;
-    left: 15%;
-    box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.89);
-    display: none;
-    z-index: 1;
-}
-.show {
-    display: block;
-}
-.ventana1 {
-    background-color: #101e4b;
-    width: 70%;
-    height: 70%;
-    border-radius: 20px;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    top: 20%;
-    left: 15%;
-    box-shadow: 0 1px 1000px rgba(0, 0, 0, 0.88);
-    display: none;
-    z-index: 1;
-}
-.show1 {
-    display: block;
-}
 
 @media screen and (max-width: 800px){
     .menu {
@@ -458,8 +486,19 @@ span {
         flex-direction: column;
         text-align: center;
         background-color: #101e4b;
-        height: 100vh;
-        top: 0;
+        padding: 45px;
+        height: 50vh;
+        width: 35vw;
+        top: 15px;
+        border-top: 0.5px solid rgba(0, 255, 255, 0.692);
+        border-left: 3px solid rgba(0, 255, 255, 0.856);
+        border-bottom: 5px solid aqua;
+        border-radius: 80px 0 0 80px;
+        box-shadow: 1px 100px 1000px rgba(0, 0, 0, 8.6);
+    }
+    .menu li a {
+        padding: 5px;
+        border-bottom: 1px solid aqua;
     }
     .menu li .menu-inicio{
         color: #dedede;
@@ -481,10 +520,10 @@ span {
         height: 5%;
         width: 10%;
         position: absolute;
-        left: 0;
-        top: 0;
+        right: 25px;
+        top: 5px;
         margin: 10px;
-        font-size: 18px;
+        font-size: 28px;
     }
     .cerrar-menu:hover {
         color: aqua;
@@ -500,7 +539,7 @@ span {
         flex-wrap: wrap;
     }
     .main img {
-        width: 45vw;
+        width: 42vw;
     }
     .about {
         display: flex;
@@ -529,6 +568,7 @@ span {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-self: normal;
     }
 }
 
@@ -544,6 +584,9 @@ span {
     .about-info h2 {
         font-size: 1.5em;
     }
+    .wrapper{
+        height: 120vh;
+    }
     .brand {
         position: relative;
     }
@@ -554,16 +597,16 @@ span {
         display: flex;
         flex-direction: column;
     }
+    .main img {
+        height: 85%;
+        width: 60vw;
+    }
     .skills i {
         font-size: 3.8em;
     }
     .skills h4 {
         color: #191c32;
         font-size: 0.9em;
-    }
-    .main img {
-        width: 60vw;
-        height: 60%;
     }
     .service_title {
         margin: 0;
