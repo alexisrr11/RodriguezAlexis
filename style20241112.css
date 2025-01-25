@@ -67,7 +67,7 @@ body {
 }
 
 .menu li:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .info-content i {
@@ -576,6 +576,11 @@ span {
 }
 
 @media screen and (max-width:500px) {
+    .menu {
+        padding: 25px;
+        padding-top: 50px;
+        width: 55vw;
+    }
     h1 {
         font-size: 2em;
     }
