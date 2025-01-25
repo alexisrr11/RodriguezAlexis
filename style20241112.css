@@ -554,6 +554,9 @@ span {
         width: 75%;
         
     }
+    .service_title {
+        padding: 1.5em;
+    }
     .servicios .container {
         flex-direction: column;
         align-items: center;
@@ -598,7 +601,7 @@ span {
         flex-direction: column;
     }
     .main img {
-        height: 75%;
+        height: 65%;
         width: 60vw;
     }
     .skills i {
@@ -609,8 +612,9 @@ span {
         font-size: 0.9em;
     }
     .service_title {
+        text-align: center;
         margin: 0;
-        padding: 0;
+        padding: 2em;
     }
     .card {
         height: 70%;
@@ -618,5 +622,11 @@ span {
     }
     .card_title {
         font-size: 0.8em;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 } 
